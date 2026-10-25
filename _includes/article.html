@@ -1,0 +1,24 @@
+{%- assign is_post = false -%}
+{%- if page.collection == "posts" %}{% assign is_post = true %}{% endif -%}
+<article class="article">
+  <header class="article-header">
+    {%- if page.collection == "coding_notes" %}
+    <p class="eyebrow"><a href="{{ '/coding_notes/' | relative_url }}">Coding Notes</a></p>
+    {%- endif %}
+    <h1 class="article-title">{{ page.title }}</h1>
+    {%- if page.collection %}
+    {%- assign words = content | strip_html | number_of_words %}
+    <p class="article-meta">
+      {%- if is_post %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time> &middot; {% endif -%}
+      {{ words | divided_by: 220 | at_least: 1 }} min read
+    </p>
+    {%- endif %}
+    {% include tags.html tags=page.tags %}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+  {%- if is_post %}
+  {% include post-nav.html %}
+  {%- endif %}
+</article>

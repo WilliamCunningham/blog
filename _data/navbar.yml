@@ -1,0 +1,9 @@
+- name: Blog
+  link: /
+- name: Coding Notes
+  link: /coding_notes/
+- name: About
+  link: /about
+- name: Dattuh
+  link: https://dattuh.com
+  external: true

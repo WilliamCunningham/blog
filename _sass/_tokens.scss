@@ -1,0 +1,50 @@
+// Design tokens. Colours are drawn from the compass/faces logo:
+// navy ink, teal accent, warm paper.
+
+:root {
+  color-scheme: light dark;
+
+  --paper: #fbfaf7;
+  --surface: #ffffff;
+  --ink: #1b2236;
+  --ink-soft: #4a5368;
+  --muted: #5f6779;
+  --rule: #e4e1da;
+  --navy: #253c78;
+  --teal: #1f6f7d;
+  --teal-tint: #e3f0f1;
+  --code-bg: #f3f1ec;
+  --focus: #1f6f7d;
+
+  --font-body: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.25rem;
+  --step-2: 1.5rem;
+  --step-3: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+
+  --measure: 42rem;
+  --wide: 64rem;
+  --radius: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #10151f;
+    --surface: #161d2b;
+    --ink: #e7eaf0;
+    --ink-soft: #c3c9d5;
+    --muted: #9aa3b5;
+    --rule: #2a3346;
+    --navy: #a9c1ff;
+    --teal: #6cc4d3;
+    --teal-tint: #173039;
+    --code-bg: #1a2232;
+    --focus: #6cc4d3;
+  }
+}
+
+$bp-md: 48rem;

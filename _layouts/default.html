@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include google.html %}
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include navbar.html %}
+  <main id="main" class="site-main{% if page.wide %} site-main--wide{% endif %}">
+    {%- comment -%} Coding notes use `layout: default` in their front matter. {%- endcomment -%}
+    {%- if page.collection == "coding_notes" and page.layout == "default" %}
+    {% include article.html %}
+    {%- else %}
+    {{ content }}
+    {%- endif %}
+  </main>
+  {% include footer.html %}
+</body>
+</html>

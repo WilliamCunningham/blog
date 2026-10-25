@@ -1,0 +1,14 @@
+# Sections on /coding_notes/. `dir` is the sub-folder of _coding_notes/.
+# Notes directly in _coding_notes/ are listed under "Overviews".
+- dir: patterns
+  title: Patterns
+- dir: principles
+  title: Principles
+- dir: algorithms
+  title: Algorithms
+- dir: data_structures
+  title: Data Structures
+- dir: concepts
+  title: Concepts
+- dir: minitest
+  title: Minitest

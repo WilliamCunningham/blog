@@ -1,0 +1,64 @@
+title: William Cunningham
+description: >-
+  Notes from a CPA and maker building Dattuh and other projects with AI
+  agents, plus business models for micro-businesses and coding notes.
+url: https://www.williamcunningham.com
+lang: en_US
+author:
+  name: William Cunningham
+  url: https://www.williamcunningham.com/about/
+social:
+  name: William Cunningham
+  links:
+    - https://twitter.com/wcunningham
+    - https://www.linkedin.com/in/williamacunningham
+twitter:
+  username: wcunningham
+logo: /assets/images/face_star_logo.jpg
+
+permalink: pretty
+relative_permalinks: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Most coding notes are Ruby; tag other fences explicitly (```sql, ```text, ...)
+    default_lang: ruby
+
+include:
+  - _definitions
+
+exclude:
+  - readme.md
+  - LICENSE
+  - "*.md.txt"
+  - "*.code-workspace"
+  - Rakefile
+  - test/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .ruby-version
+
+collections:
+  coding_notes:
+    output: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  excerpt_only: true
+
+defaults:
+  - scope:
+      path: "**/*"
+    values:
+      layout: "post"
+
+disqus:
+  shortname: williamcunningham

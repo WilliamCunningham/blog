@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-bio">
+      <img src="{{ '/assets/images/face_star_logo.jpg' | relative_url }}" alt="" width="56" height="56" loading="lazy">
+      <div>
+        <p class="footer-name">William Cunningham</p>
+        <p>CPA and maker. After 30 years in finance and accounting roles in the television industry, I mentor micro-business owners and build <a href="https://dattuh.com">Dattuh</a>, bookkeeping tools for small businesses, with the help of AI agents.</p>
+      </div>
+    </div>
+    <ul class="footer-links" aria-label="Contact and subscribe">
+      <li><a href="https://www.linkedin.com/in/williamacunningham" rel="me">{% include icon.html name="linkedin" %}LinkedIn</a></li>
+      <li><a href="https://twitter.com/wcunningham" rel="me">{% include icon.html name="x" %}X / Twitter</a></li>
+      <li><a href="mailto:william.cunningham@hey.com">{% include icon.html name="email" %}Email</a></li>
+      <li><a href="{{ '/feed.xml' | relative_url }}">{% include icon.html name="rss" %}RSS</a></li>
+    </ul>
+    <p class="footer-copy">&copy; {{ site.time | date: "%Y" }} William Cunningham. All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,19 @@
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / bundler
+.bundle/
+vendor/
+.ruby-lsp/
+
+# OS / editor
+.DS_Store
+
+# Private content (kept locally, not in the repo)
+_coding_notes/
+_drafts/
+readme.md
+*.md.txt

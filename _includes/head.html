@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- comment -%}
+  GitHub Pages can't send custom HTTP headers, so the CSP is delivered as a
+  meta tag. upgrade-insecure-requests is production-only: Safari applies it to
+  http://localhost too, which stops CSS loading under `jekyll serve`.
+  If you add a new third-party service (or new tags inside Google
+  Tag Manager), its domains must be added here.
+{%- endcomment %}
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com; frame-src https://www.googletagmanager.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'{% if jekyll.environment == "production" %}; upgrade-insecure-requests{% endif %}">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/jpeg" href="{{ '/assets/images/face_star_logo.jpg' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/images/face_star_logo.jpg' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+{% feed_meta %}
+{% seo %}
+{%- if jekyll.environment == "production" %}
+<script src="{{ '/js/gtm.js' | relative_url }}" async></script>
+{%- endif %}

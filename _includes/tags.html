@@ -1,0 +1,7 @@
+{%- if include.tags and include.tags.size > 0 -%}
+<ul class="tags" aria-label="Tags">
+  {%- for tag in include.tags %}
+  <li class="tag">{{ tag }}</li>
+  {%- endfor %}
+</ul>
+{%- endif -%}

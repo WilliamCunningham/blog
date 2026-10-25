@@ -1,0 +1,46 @@
+---
+layout: default
+title: Coding Notes
+description: Notes on design patterns, principles, algorithms and data structures, written while learning Ruby on Rails.
+wide: true
+---
+
+<h1 class="page-title">Coding Notes</h1>
+<p class="page-lede">{{ page.description }}</p>
+
+{%- assign notes = site.coding_notes | sort: "title" %}
+
+{%- assign overview_count = 0 %}
+{%- for note in notes %}
+  {%- assign parts = note.relative_path | split: "/" %}
+  {%- if parts.size == 2 %}{% assign overview_count = overview_count | plus: 1 %}{% endif %}
+{%- endfor %}
+
+{%- if overview_count > 0 %}
+<section class="note-section" aria-labelledby="notes-overviews">
+  <h2 class="note-section-title" id="notes-overviews">Overviews <span class="note-count">{{ overview_count }}</span></h2>
+  <ul class="note-list">
+    {%- for note in notes %}
+      {%- assign parts = note.relative_path | split: "/" %}
+      {%- if parts.size == 2 %}
+    <li><a href="{{ note.url | relative_url }}">{{ note.title }}</a></li>
+      {%- endif %}
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+{%- for category in site.data.note_categories %}
+  {%- assign prefix = "_coding_notes/" | append: category.dir | append: "/" %}
+  {%- assign category_notes = notes | where_exp: "note", "note.relative_path contains prefix" %}
+  {%- if category_notes.size > 0 %}
+<section class="note-section" aria-labelledby="notes-{{ category.dir }}">
+  <h2 class="note-section-title" id="notes-{{ category.dir }}">{{ category.title }} <span class="note-count">{{ category_notes.size }}</span></h2>
+  <ul class="note-list">
+    {%- for note in category_notes %}
+    <li><a href="{{ note.url | relative_url }}">{{ note.title }}</a></li>
+    {%- endfor %}
+  </ul>
+</section>
+  {%- endif %}
+{%- endfor %}

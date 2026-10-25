@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/face_star_logo.jpg' | relative_url }}" alt="" width="36" height="36">
+      <span>William Cunningham</span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        {%- for item in site.data.navbar %}
+          {%- if item.external %}
+        <li><a class="nav-external" href="{{ item.link }}">{{ item.name }}<span aria-hidden="true"> &#8599;</span></a></li>
+            {%- continue %}
+          {%- endif %}
+          {%- if item.link == "/" -%}
+            {%- if page.url == "/" or page.collection == "posts" %}{% assign current = true %}{% else %}{% assign current = false %}{% endif -%}
+          {%- else -%}
+            {%- if page.url contains item.link %}{% assign current = true %}{% else %}{% assign current = false %}{% endif -%}
+          {%- endif %}
+        <li><a href="{{ item.link | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ item.name }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
