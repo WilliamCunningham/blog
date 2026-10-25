@@ -25,7 +25,7 @@ jobs:
           bundler-cache: true # runs `bundle install` and caches gems
       - name: Build and test
         run: bundle exec rake test
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
 
   deploy:
