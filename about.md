@@ -2,10 +2,10 @@
 layout: post
 title: About Me
 permalink: /about
-description: I'm Bill Cunningham, a CPA and maker. I'm building Dattuh, bookkeeping tools for small businesses, with the help of AI agents.
+description: I'm Bill Cunningham, a CPA and business app maker. I'm building Dattuh, bookkeeping tools for small businesses, with the help of AI coding agents.
 ---
 
-I'm Bill: a CPA, a mentor to micro-business owners, and a maker. Right now I'm building [Dattuh](https://dattuh.com), bookkeeping tools for small businesses. I'm building it with AI agents doing most of the coding.
+I'm a CPA, a small business mentor, and a business app maker. Right now I'm building [Dattuh](https://dattuh.com), bookkeeping tools for small businesses. I'm building it with AI coding agents.
 
 This site is my working notebook. I write about what I'm building, what I'm learning along the way, and the business ideas behind it all.
 
@@ -37,9 +37,9 @@ Working this way lets one CPA build and run a real SaaS application. I'll write 
 
 ### Where I come from
 
-I'm named after my two grandfathers, William Cunningham and Andrew Shaw. One was born six years after the [American Civil War](https://en.wikipedia.org/wiki/American_Civil_War). Both were farmers, which is probably one reason I enjoy working with micro-businesses.
+I'm named after my two grandfathers, William Cunningham and Andrew Shaw. One was born six years after the [American Civil War](https://en.wikipedia.org/wiki/American_Civil_War). Both were farmers, which is probably one reason I enjoy working with small businesses.
 
-I spent most of my career in financial and accounting roles in the television industry. I'm a CPA licensed in the State of Rhode Island. Over the past several years I've volunteered hundreds of hours mentoring micro-business owners.
+I spent most of my career in financial and accounting roles in the television industry. I'm a CPA licensed in the State of Rhode Island. Over the past several years I've volunteered hundreds of hours mentoring small business owners.
 
 I've struggled most of my life to name my [purpose]({% post_url /personal/2024-02-29-purpose %}). Looking back, every chunk of code I wrote to solve a business problem was a breadcrumb pointing the same way. Dattuh is where those breadcrumbs led.
 
@@ -54,8 +54,8 @@ Building a business, or a piece of software, is a lot like a puzzle. You start w
 - **Building Dattuh:** progress, decisions, and lessons from building software with AI agents.
 - **Other projects:** whatever else I'm making.
 - **Business models and principles:** ideas I use when mentoring micro-business owners.
-- **[Coding notes](/coding_notes/):** patterns, principles and algorithms I've studied.
+- **Accounting topics** _how-tos_ on creating meaningful accounting data for your business focusing mainly on QuickBooks Online.
 
 You can reach me by [email](mailto:william.cunningham@hey.com) or on [LinkedIn](https://www.linkedin.com/in/williamacunningham).
 
-Bill
+Bill Cunningham
