@@ -12,6 +12,6 @@ end
 
 group :test do
   gem "html-proofer", "~> 5.0"
-  gem "minitest", "~> 6.0"
+  gem "minitest", "~> 6.1"
   gem "rake", "~> 13.2"
 end
